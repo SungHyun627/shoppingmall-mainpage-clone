@@ -12,7 +12,7 @@
     <header class="header-container">
       <div class="header-container__main-bar">
         <a class="main-bar__logo">
-          <img class="logo-img" src="./assets/logo.png" alt="쇼핑하우" />
+          <img class="logo-icon" src="./assets/logo.png" alt="쇼핑하우" />
         </a>
         <div class="main-bar__search">
           <form class="search-form">
@@ -28,25 +28,64 @@
         </div>
       </div>
       <div class="header-container__nav-container">
-        <ul class="nav-container__sale-categories">
-          <li class="sale_category item_category">
-            <button></button>
-            <span>카테고리</span>
-          </li>
-          <li class="sale_category">
-            <a class="sale_category_link">핫딜</a>
-          </li>
-          <li class="sale_category">
-            <a class="sale_category_link">베스트100</a>
-          </li>
-          <li class="sale_category">
-            <a class="sale_category_link">할인특가</a>
-          </li>
-          <li class="sale_category">
-            <a class="sale_category_link">기획전</a>
-          </li>
-        </ul>
-        <ul class="nav-container__user-container"></ul>
+        <div class="nav-container__category-container">
+          <div class="category-container__item-category">
+            <img class="menu-icon" src="./assets/icons/menu-icon.png" />
+            <img class="xmark-icon" src="./assets/icons/xmark-icon.png" />
+            <div class="category-list">카테고리</div>
+          </div>
+          <span class="separate-line"></span>
+          <div class="category-container__sale-categories">
+            <ul>
+              <li class="sale-category">
+                <a class="sale-category__link">핫딜</a>
+              </li>
+              <li class="sale-category">
+                <a class="sale-category__link">베스트100</a>
+              </li>
+              <li class="sale-category">
+                <a class="sale-category__link">할인특가</a>
+              </li>
+              <li class="sale-category">
+                <a class="sale-category__link">기획전</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-container__trend-tags-container">
+          <ul>
+            <li class="trend-tag">
+              <a class="trend-tag__link">#건강식품</a>
+            </li>
+            <li class="trend-tag">
+              <a class="trend-tag__link">#트레킹화</a>
+            </li>
+            <li class="trend-tag">
+              <a class="trend-tag__link">#로봇청소기</a>
+            </li>
+            <li class="trend-tag">
+              <a class="trend-tag__link">#그늘막텐트</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-container__user-container">
+          <ul>
+            <li class="user-container__login">
+              <a>
+                <img class="login-icon" src="./assets/icons/login-icon.png" />
+                <div class="login__text">로그인</div>
+              </a>
+            </li>
+            <li class="user-container__history">
+              <img class="history-icon" src="./assets/icons/history-icon.png" />
+              <div class="history_text">최근본 상품</div>
+              <img
+                class="sort-down-icon"
+                src="./assets/icons/sort-down-icon.png"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   </body>

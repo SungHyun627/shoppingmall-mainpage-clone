@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-.logo-img {
+.logo-icon {
   width: auto;
   height: 55px;
 }
@@ -49,9 +49,123 @@
   background: #fff;
 }
 
+.search-form__search-button:hover {
+  cursor: pointer
+}
+
 .search-icon {
-  background: #fff;
-  filter: opacity(0.4), drop-shadow(0 0 0 #ff483f);
+  filter: invert(78%) sepia(30%) saturate(2950%) hue-rotate(308deg) brightness(111%) contrast(101%);
   width: 23px;
   height: 23px;
+}
+
+.header-container__nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 5%;
+  width: 100%;
+  border-top: 1px solid #efefef;
+  text-align: center;
+  font-size: 16px;
+}
+
+.nav-container__category-container {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.category-container__item-category {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.menu-icon, .xmark-icon {
+  width: auto;
+  height: 35px;
+  padding-right: 10px;
+}
+
+.category-container__item-category:hover>.menu-icon, .xmark-icon {
+  display: none;
+}
+
+.category-container__item-category:hover>.xmark-icon {
+  display: inline-flex;
+  width: auto;
+  cursor: pointer;
+  filter: invert(78%) sepia(30%) saturate(2950%) hue-rotate(308deg) brightness(111%) contrast(101%);
+}
+
+.category-container__item-category:hover {
+  cursor: pointer;
+}
+
+.separate-line {
+  width: 2px;
+  height: 18px;
+  background-color: #efefefb1;
+}
+
+.category-container__sale-categories {
+  padding: 0 5px;
+}
+
+.category-container__sale-categories>ul {
+  display: flex;
+}
+
+.sale-category {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.sale-category:hover {
+  color: #ff9088;
+  cursor: pointer;
+}
+
+.nav-container__trend-tags-container {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.nav-container__trend-tags-container>ul {
+  display: flex;
+}
+
+.trend-tag {
+  font-weight: 700;
+  padding: 10px 10px;
+  color: #888
+}
+
+.nav-container__user-container>ul {
+  display: flex;
+  align-items: center;
+}
+
+.user-container__login>a, .user-container__history {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-icon, .history-icon {
+  width: auto;
+  height: 35px;
+  padding-right: 5px;
+}
+
+.sort-down-icon {
+  width: auto;
+  height: 15px;
+}
+
+.nav-container__user-container>a {
+  text-align: center;
 }
