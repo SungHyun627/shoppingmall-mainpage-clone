@@ -4,6 +4,9 @@
   align-items: center;
   padding-top: 40px;
   width: 100%;
+  background: #fff;
+  position: sticky;
+  top: 0;
 }
 
 .header-container__main-bar {
@@ -154,13 +157,21 @@
   cursor: pointer;
 }
 
+.user-container__history:hover>.sort-down-icon, .sort-up-icon {
+  display: none;
+}
+
+.user-container__history:hover>.sort-up-icon {
+  display: inline-block;
+}
+
 .login-icon, .history-icon {
   width: auto;
   height: 35px;
   padding-right: 5px;
 }
 
-.sort-down-icon {
+.sort-down-icon, .sort-up-icon {
   width: auto;
   height: 15px;
 }
